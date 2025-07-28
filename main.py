@@ -43,6 +43,8 @@ class Base(DeclarativeBase):
     pass
 
 
+load_dotenv()
+
 db = SQLAlchemy(model_class=Base)
 
 app = Flask(__name__)
@@ -66,8 +68,6 @@ email = os.environ.get("EMAIL")
 password = os.environ.get("PASSWORD")
 
 video_url = os.environ.get("VIDEO-URL")
-
-load_dotenv()
 
 config = cloudinary.config(secure=True)
 
