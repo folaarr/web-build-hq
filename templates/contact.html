@@ -37,4 +37,14 @@
         <span class="home-chat"> WhatsApp</span>
     </a>
 </div>
+
+    <script>
+        document.querySelector("a.hero-button").addEventListener("click", function(e) {
+            e.preventDefault();
+            fbq('trackCustom', 'ContactWhatsAppClick');
+            setTimeout(function() {
+            window.open('https://wa.me/2348067071135', '_blank');
+            }, 300);
+        });
+    </script>
 {% endblock %}

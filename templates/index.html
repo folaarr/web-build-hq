@@ -87,4 +87,14 @@
             <a class="text more-testimonies" href="{{ url_for('testimonies') }}" style="display: none;">View more testimonies</a>
         {% endif %}
     </div>
+
+    <script>
+        document.querySelector("a.hero-button").addEventListener("click", function(e) {
+            e.preventDefault();
+            fbq('trackCustom', 'HomeWhatsAppClick');
+            setTimeout(function() {
+            window.open('https://wa.me/2348067071135', '_blank');
+            }, 300);
+        });
+    </script>
 {% endblock %}

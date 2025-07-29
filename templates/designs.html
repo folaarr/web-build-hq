@@ -435,4 +435,14 @@
 
         </div>
     </div>
+
+    <script>
+        document.querySelector("a.designs-button").addEventListener("click", function(e) {
+            e.preventDefault();
+            fbq('trackCustom', 'DesignsWhatsAppClick');
+            setTimeout(function() {
+            window.open('https://wa.me/2348067071135', '_blank');
+            }, 300);
+        });
+    </script>
 {% endblock %}
