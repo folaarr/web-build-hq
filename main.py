@@ -646,4 +646,4 @@ def hide_testimony(i_d):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
