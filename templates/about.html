@@ -54,7 +54,7 @@
     <script>
         document.querySelector("a.about-button").addEventListener("click", function(e) {
             e.preventDefault();
-            fbq('trackCustom', 'AboutWhatsAppClick');
+            fbq('track', 'Contact');
             setTimeout(function() {
             window.open('https://wa.me/2348067071135', '_blank');
             }, 300);

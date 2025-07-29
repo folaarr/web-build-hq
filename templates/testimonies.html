@@ -79,7 +79,7 @@
     <script>
         document.querySelector("a.testimonials-button").addEventListener("click", function(e) {
             e.preventDefault();
-            fbq('trackCustom', 'TestimonialsWhatsAppClick');
+            fbq('track', 'Contact');
             setTimeout(function() {
             window.open('https://wa.me/2348067071135', '_blank');
             }, 300);
