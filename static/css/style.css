@@ -253,27 +253,31 @@ div.video-holder {
         font-size: 4vw;
         margin-top: 22vw;
         min-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .contact-text {
-        padding-left: 3.5vw;
+        /* padding-left: 3.5vw; */
     }
 
     h2.contact-header {
-        margin-bottom: 0vh;
+        /* margin-bottom: 0vh; */
+        margin-top: 40vw;
     }
 
     p.contact-body {
         margin-top: 2vh;
-        margin-bottom: 8vw;
+        margin-bottom: 0;
     }
 
     a.contact-button {
         border-radius: 1vw;
         padding: 1.75vh 7.5vw;
-        max-width: 20vw;
-        margin-left: 3.5vw;
-        margin-top: 4vw;
+        /* max-width: 20vw; */
+        /* margin-left: 3.5vw; */
+        margin-top: 7vw;
     }
 
     div.testimonies-card {
@@ -1525,29 +1529,36 @@ div.video-holder {
         font-size: 1.8vw;
         display: flex;
         flex-direction: column;
-        min-width: 67vw;
+        width: 100vw;
         min-height: 100vh;
-        padding-top: 10vw;;
+        padding-top: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .contact-text {
-        padding-left: 2vw;
+        /* padding-left: 2vw; */
     }
 
     h2.contact-header {
-        margin-bottom: 0vh;
+        /* margin-bottom: 0vh; */
+        /* text-decoration: underline; */
+        margin-top: 8vw;
     }
 
     p.contact-body {
-        margin-top: 2vh;
+        /* margin-top: 2vh; */
+        margin: 1vw;
     }
 
     a.contact-button {
         border-radius: 1vw;
         padding: 2.5vh 0vw;
         width: 21vw;
-        margin-left: 2vw;
+        /* margin-left: 2vw; */
         text-align: center;
+        margin-top: 2vw;
     }
 
     div.testimonies-card {
