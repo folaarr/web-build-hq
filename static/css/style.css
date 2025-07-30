@@ -1502,11 +1502,12 @@ div.video-holder {
     div.about-content {
         display: flex;
         flex-direction: column;
-        min-width: 75vw;
+        /* min-width: 75vw; */
         min-height: 100vh;
         font-size: 1.75vw;
         padding-top: 18vw;
         box-sizing: border-box;
+        padding-bottom: 18vw;
     }
 
     div.about-text {
