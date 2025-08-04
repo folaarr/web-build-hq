@@ -50,6 +50,10 @@ div.video-holder {
     justify-content: center;
 }
 
+span.free {
+    color: #16C47F;
+}
+
 @media (orientation: portrait) {
 
     webbuild-container {
