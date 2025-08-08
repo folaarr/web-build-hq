@@ -426,6 +426,8 @@ def verify_email(e_mail):
     verify_form = VerifyForm()
     unconfirmed_person = db.session.execute(db.select(UnverifiedUser).where(UnverifiedUser.email == e_mail)).scalar()
     if unconfirmed_person.mail_sent != True:
+        # with smtplib.SMTP_SSL("smtp.hostinger.com", port=465) as connection:
+        #     connection.login("original_username", "password")
         with smtplib.SMTP("smtp.gmail.com", 587, timeout=20) as connection:
             connection.ehlo()
             connection.starttls()
